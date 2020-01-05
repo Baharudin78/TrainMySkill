@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_Home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/navigation_Explore"
+        android:icon="@drawable/clipboard"
+        android:title="Saved"/>
+    <item
+        android:id="@+id/navigation_Order"
+        android:icon="@drawable/script"
+        android:title="My Booking"/>
+
+    <item
+        android:id="@+id/navigation_Inbox"
+        android:icon="@drawable/inbox"
+        android:title="Inbox"/>
+    <item
+        android:id="@+id/navigation_Profile"
+        android:icon="@drawable/user"
+        android:title="Profile"/>
+
+
+</menu>

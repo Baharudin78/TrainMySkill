@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".HomeView">
+
+    <!-- TODO: Update blank fragment layout -->
+    <View
+        android:id="@+id/viewHome"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/traveloka_white"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/layout_searchbar"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:hint="Search for Destination" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/search_bar"
+        android:src="@drawable/ic_more"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/viewHome"
+            android:id="@+id/layoutProfile"
+            android:background="@color/greyPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pic_user"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/circle_foto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Baharudin Maulana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/layout_searchbar"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:background="@drawable/layout_searchbar"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/money"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:text="12 Point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/next"
+                            android:layout_width="20dp"
+                            android:layout_height="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/layout_searchbar"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/cash"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:text="12 Point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/next"
+                            android:layout_width="20dp"
+                            android:layout_height="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/kotak"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/features"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/greyPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/layoutProfile"
+            android:orientation="vertical"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:weightSum="4"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/layoutProfile"
+                android:orientation="horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/airplane"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"/>
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:text="Plane"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/hotel"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"/>
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:text="Hotel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/bus"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"/>
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:text="Bus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/restaurant"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"/>
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:text="Restaurant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:weightSum="4"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/layoutProfile"
+                android:orientation="horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/bicycle"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"/>
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:text="Bike Rent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/flask"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"/>
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:text="Xperience"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/train"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"/>
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:text="Train"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/boat"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"/>
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:text="Cruise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/features"
+            android:id="@+id/service"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="Service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:background="@color/greyPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/service"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/bill"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="Top-Up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/film_roll"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="Movie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/life_asuransi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="Insurance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/taxes"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="Taxs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/next"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>
